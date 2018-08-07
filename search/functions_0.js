@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['main',['main',['../main_8cpp.html#a81ce304348a420752ee080480d2b3095',1,'main.cpp']]]
+  ['blackandwhitefigure',['BlackAndWhiteFigure',['../classBlackAndWhiteFigure.html#a195f06dc4cd71b83cf0bb8594fa784b7',1,'BlackAndWhiteFigure']]]
 ];

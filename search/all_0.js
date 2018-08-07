@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['main',['main',['../main_8cpp.html#a81ce304348a420752ee080480d2b3095',1,'main.cpp']]],
-  ['main_2ecpp',['main.cpp',['../main_8cpp.html',1,'']]]
+  ['blackandwhitefigure',['BlackAndWhiteFigure',['../classBlackAndWhiteFigure.html',1,'BlackAndWhiteFigure'],['../classBlackAndWhiteFigure.html#a195f06dc4cd71b83cf0bb8594fa784b7',1,'BlackAndWhiteFigure::BlackAndWhiteFigure()']]],
+  ['blackwhitegraphicprimitivecreator',['BlackWhiteGraphicPrimitiveCreator',['../classBlackWhiteGraphicPrimitiveCreator.html',1,'']]]
 ];
