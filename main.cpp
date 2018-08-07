@@ -1,6 +1,7 @@
 #include <string>
 #include <cassert>
 #include <iostream>
+#include <stdexcept>
 
 class IGraphicPrimitive
 {
@@ -203,7 +204,7 @@ private:
 		case DocumentEditors::UseLocalFileDocumentEditor:
 			return new LocalFileDocumentEditor();
 		default:
-			throw std::logic_error("unsupported creator");
+			throw std::logic_error("unsupported editor");
 		}
 	}
 
@@ -244,7 +245,7 @@ int main(int, char *[])
 		editor.FileMenu()->ExportToFile("exported_test.bmp");
 	}
 
-	getchar();
+	//getchar();
 
 	return 0;
 }
