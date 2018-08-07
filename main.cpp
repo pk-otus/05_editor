@@ -3,24 +3,41 @@
 #include <iostream>
 #include <stdexcept>
 
+namespace
+{
+	using color_type = uint64_t;
+
+	enum EnumColors : color_type
+	{
+		COLOR_BLACK		= 0x000000,
+		COLOR_RED		= 0xFF0000,
+		COLOR_GREEN		= 0x00FF00,
+		COLOR_BLUE		= 0x0000FF,
+		COLOR_WHITE		= 0xFFFFFF
+	};
+
+	std::string BWColorName(bool black) { return black ? "black" : "white"; }
+}
+
 class IGraphicPrimitive
 {
 public:
 	virtual ~IGraphicPrimitive() = default;
 
-	virtual void Draw() = 0;
+	virtual void Draw() const = 0;
 };
 
-class IGraphicPrimitiveCreator
+class IGraphicPrimitiveCreator //abstract factory
 {
 public:
 	virtual ~IGraphicPrimitiveCreator() = default;
 
-	virtual bool				SetBrushColor(uint64_t color) = 0;
+	virtual bool						TrySetBrushColor(color_type col) = 0;
 
-	virtual IGraphicPrimitive*	CreateTriangle()	const = 0;
-	virtual IGraphicPrimitive*	CreateCircle()		const = 0;
-	virtual void				DeletePrimitive(IGraphicPrimitive* p) const = 0;
+	virtual const IGraphicPrimitive*	CreateTriangle()	const = 0;
+	virtual const IGraphicPrimitive*	CreateCircle()		const = 0;
+
+	virtual void						DeletePrimitive(const IGraphicPrimitive* p) const = 0;
 
 };
 
@@ -36,67 +53,67 @@ private:
 class RGBFigure
 {
 public:
-	RGBFigure(uint64_t col) : color(col) {}
+	RGBFigure(color_type col) : color(col) {}
 
-	uint64_t GetColor() const { return color; }
+	color_type GetColor() const { return color; }
 private:
-	uint64_t color;
+	color_type color;
 };
 
 class TriangleRGB : RGBFigure, public IGraphicPrimitive
 {
 public:
-	TriangleRGB(uint64_t col) : RGBFigure(col) {}		
-	void Draw() override { std::cout << "I am RGB triangle, my color is " << std::hex << GetColor() << '\n'; }
+	TriangleRGB(color_type col) : RGBFigure(col) {}
+	void Draw() const override { std::cout << "I am RGB triangle, my color is " << std::hex << GetColor() << '\n'; }
 };
 
 class CircleRGB : RGBFigure, public IGraphicPrimitive
 {
 public:
-	CircleRGB(uint64_t col) : RGBFigure(col) {}
-	void Draw() override { std::cout << "I am RGB circle, my color is " << std::hex << GetColor() << '\n'; }
+	CircleRGB(color_type col) : RGBFigure(col) {}
+	void Draw() const override { std::cout << "I am RGB circle, my color is " << std::hex << GetColor() << '\n'; }
 };
 
 class TriangleBW : public IGraphicPrimitive, BlackAndWhiteFigure
 {
 public:
 	TriangleBW(bool bw) : BlackAndWhiteFigure(bw) {}
-	void Draw() override { std::cout	<< "I am Black/White triangle, my color is " 
-										<< (IsBlack() ? "black" : "white") << '\n'; }
+	void Draw() const override { std::cout	<< "I am Black/White triangle, my color is "
+										<< BWColorName(IsBlack()) << '\n'; }
 };
 
 class CircleBW : public IGraphicPrimitive, BlackAndWhiteFigure
 {
 public:
 	CircleBW(bool bw) : BlackAndWhiteFigure(bw) {}
-	void Draw() override { std::cout	<< "I am Black/White circle, my color is " 
-										<< (IsBlack() ? "black" : "white") << '\n'; }
+	void Draw() const override { std::cout	<< "I am Black/White circle, my color is "
+										<< BWColorName(IsBlack()) << '\n'; }
 };
 
 class BlackWhiteGraphicPrimitiveCreator : public IGraphicPrimitiveCreator
 {
 public:
-	IGraphicPrimitive* CreateTriangle() const override
+	const IGraphicPrimitive* CreateTriangle() const override
 	{
 		return new TriangleBW(isBlackBrhush);
 	}
-	IGraphicPrimitive* CreateCircle() const override
+	const IGraphicPrimitive* CreateCircle() const override
 	{
 		return new CircleBW(isBlackBrhush);
 	}
-	void DeletePrimitive(IGraphicPrimitive* p) const override
+	void DeletePrimitive(const IGraphicPrimitive* p) const override
 	{
 		delete p;
 	}
 
-	bool SetBrushColor(uint64_t color) override
+	bool TrySetBrushColor(color_type col) override
 	{
-		switch(color)
+		switch(col)
 		{
-		case 0:
+		case COLOR_BLACK:
 			isBlackBrhush = true;
 			break;
-		case 0xFFFFFF:
+		case COLOR_WHITE:
 			isBlackBrhush = false;
 			break;
 		default:
@@ -111,26 +128,26 @@ private:
 class RGBGraphicPrimitiveCreator : public IGraphicPrimitiveCreator
 {
 public:
-	IGraphicPrimitive * CreateTriangle() const override
+	const IGraphicPrimitive * CreateTriangle() const override
 	{
 		return new TriangleRGB(brush_color);
 	}
-	IGraphicPrimitive* CreateCircle() const override
+	const IGraphicPrimitive* CreateCircle() const override
 	{
 		return new CircleRGB(brush_color);
 	}
-	void DeletePrimitive(IGraphicPrimitive* p) const override
+	void DeletePrimitive(const IGraphicPrimitive* p) const override
 	{
 		delete p;
 	}
 
-	bool SetBrushColor(uint64_t color) override
+	bool TrySetBrushColor(color_type col) override
 	{
-		brush_color = color;
+		brush_color = col;
 		return true; //success
 	}
 private:
-	uint64_t brush_color = 0;
+	color_type brush_color = 0x00000;
 };
 
 class IDocumentEditor
@@ -146,18 +163,27 @@ public:
 class LocalFileDocumentEditor : public IDocumentEditor
 {
 public:
+	LocalFileDocumentEditor(const std::string& workdir) : working_directory(workdir) {}
+
 	void CreateNewDocument(const std::string& file_name) override
 	{
-		std::cout << "Create new c:/" << file_name << '\n';
+		std::cout << "Create new " << FullName(file_name) << '\n';
 	}
 	void ImportFromFile(const std::string& file_name) override
 	{
-		std::cout << "Import from c:/" << file_name << '\n';
+		std::cout << "Import from " << FullName(file_name) << '\n';
 	}
 	void ExportToFile(const std::string& file_name) override
 	{
-		std::cout << "Export to c:/" << file_name << '\n';
+		std::cout << "Export to " << FullName(file_name) << '\n';
 	}
+private:
+	std::string FullName(const std::string& file_name) const
+	{
+		return working_directory + file_name;
+	}
+
+	const std::string working_directory;
 };
 
 enum class PrimitiveCreators
@@ -175,8 +201,8 @@ class GraphicEditor
 {
 public:
 	GraphicEditor(DocumentEditors cfg_editor, PrimitiveCreators cfg_creator) :
-		doc_editor(InitializeDocumentEditor(cfg_editor)),
-		primitive_creator(InitializeFigureCreator(cfg_creator))
+		doc_editor			(InitializeDocumentEditor(cfg_editor)),
+		primitive_creator	(InitializeFigureCreator(cfg_creator))
 	{}
 
 	IDocumentEditor*			FileMenu() const { return doc_editor; }
@@ -193,7 +219,7 @@ private:
 		case PrimitiveCreators::UseRGBPrimitiveCreator:
 			return new RGBGraphicPrimitiveCreator();
 		default:
-			throw std::logic_error("unsupported creator");
+			throw std::logic_error("unsupported figure creator");
 		}
 	}
 
@@ -202,16 +228,15 @@ private:
 		switch (cfg_editor)
 		{
 		case DocumentEditors::UseLocalFileDocumentEditor:
-			return new LocalFileDocumentEditor();
+			return new LocalFileDocumentEditor("c:\\work\\");
 		default:
-			throw std::logic_error("unsupported editor");
+			throw std::logic_error("unsupported file editor");
 		}
 	}
 
 	IDocumentEditor*				const doc_editor;
 	IGraphicPrimitiveCreator*		const primitive_creator;
 };
-
 
 int main(int, char *[])
 {
@@ -230,10 +255,10 @@ int main(int, char *[])
 
 		editor.FileMenu()->CreateNewDocument("test.bmp");
 
-		editor.EditMenu()->SetBrushColor(0xFF0000);
+		editor.EditMenu()->TrySetBrushColor(COLOR_RED);
 		auto triangle1 = editor.EditMenu()->CreateTriangle();
 
-		editor.EditMenu()->SetBrushColor(0xFFFFFF);
+		editor.EditMenu()->TrySetBrushColor(COLOR_WHITE); 
 		auto circle1 = editor.EditMenu()->CreateCircle();
 
 		triangle1->Draw();
@@ -245,7 +270,7 @@ int main(int, char *[])
 		editor.FileMenu()->ExportToFile("exported_test.bmp");
 	}
 
-	//getchar();
+	getchar();
 
 	return 0;
 }
