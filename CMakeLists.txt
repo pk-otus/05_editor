@@ -8,18 +8,17 @@ endif()
 
 configure_file(version.h.in ${PROJECT_SOURCE_DIR}/version.h)
 
+set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
 add_executable(editor main.cpp)
 
 if ("${CMAKE_CXX_COMPILER_ID}" STREQUAL "GNU")
 	set_target_properties(editor PROPERTIES
-		CXX_STANDARD 14
-		CXX_STANDARD_REQUIRED ON
 		COMPILE_OPTIONS -Wpedantic -Wall -Wextra
 	)
 elseif ("${CMAKE_CXX_COMPILER_ID}" STREQUAL "MSVC")
 	set_target_properties(editor PROPERTIES
-		CXX_STANDARD 14
-		CXX_STANDARD_REQUIRED ON
 		COMPILE_OPTIONS -W3 
 	)
 endif()

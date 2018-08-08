@@ -144,10 +144,10 @@ public:
 	bool TrySetBrushColor(color_type col) override
 	{
 		brush_color = col;
-		return true; //success
+		return true; //changed
 	}
 private:
-	color_type brush_color = 0x00000;
+	color_type brush_color = COLOR_BLACK;
 };
 
 class IDocumentEditor
@@ -269,8 +269,6 @@ int main(int, char *[])
 
 		editor.FileMenu()->ExportToFile("exported_test.bmp");
 	}
-
-	getchar();
 
 	return 0;
 }
