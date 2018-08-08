@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['setbrushcolor',['SetBrushColor',['../classIGraphicPrimitiveCreator.html#ae4f49bb03ccf3ef15f2b0f25ea8ca65e',1,'IGraphicPrimitiveCreator::SetBrushColor()'],['../classBlackWhiteGraphicPrimitiveCreator.html#a9587d5535b79b1f625b2e96848d56ab3',1,'BlackWhiteGraphicPrimitiveCreator::SetBrushColor()'],['../classRGBGraphicPrimitiveCreator.html#ac7d39f5562c58ea64b4cc35b27caf434',1,'RGBGraphicPrimitiveCreator::SetBrushColor()']]]
+  ['trianglebw',['TriangleBW',['../classTriangleBW.html',1,'TriangleBW'],['../classTriangleBW.html#ad3f7a09d229acb0963b36f78e6916c9b',1,'TriangleBW::TriangleBW()']]],
+  ['trianglergb',['TriangleRGB',['../classTriangleRGB.html',1,'TriangleRGB'],['../classTriangleRGB.html#a1a72766e0327de4955235c74babe3eee',1,'TriangleRGB::TriangleRGB()']]],
+  ['trysetbrushcolor',['TrySetBrushColor',['../classIGraphicPrimitiveCreator.html#a92b2bc51f28c2b7d1043634ee00da6c3',1,'IGraphicPrimitiveCreator::TrySetBrushColor()'],['../classBlackWhiteGraphicPrimitiveCreator.html#a57abe91bf651a22cc9b0f6dfc16f4537',1,'BlackWhiteGraphicPrimitiveCreator::TrySetBrushColor()'],['../classRGBGraphicPrimitiveCreator.html#a8d12ccc9692617ba204bbcfb31b1fbdd',1,'RGBGraphicPrimitiveCreator::TrySetBrushColor()']]]
 ];

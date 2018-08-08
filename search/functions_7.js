@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['main',['main',['../main_8cpp.html#a81ce304348a420752ee080480d2b3095',1,'main.cpp']]]
+  ['localfiledocumenteditor',['LocalFileDocumentEditor',['../classLocalFileDocumentEditor.html#a6af8174d069404c1179cdb5cb4d0f917',1,'LocalFileDocumentEditor']]]
 ];

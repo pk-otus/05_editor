@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['trianglebw',['TriangleBW',['../classTriangleBW.html',1,'TriangleBW'],['../classTriangleBW.html#ad3f7a09d229acb0963b36f78e6916c9b',1,'TriangleBW::TriangleBW()']]],
-  ['trianglergb',['TriangleRGB',['../classTriangleRGB.html',1,'TriangleRGB'],['../classTriangleRGB.html#a34bab36012b17cb712f467f03be7f745',1,'TriangleRGB::TriangleRGB()']]]
+  ['useblackwhiteprimitivecreator',['UseBlackWhitePrimitiveCreator',['../main_8cpp.html#a03a6af752ae461b0c1de2af89dfd7e26abba8b6c6620945660193dd4f97474745',1,'main.cpp']]],
+  ['uselocalfiledocumenteditor',['UseLocalFileDocumentEditor',['../main_8cpp.html#a63a2a9ae99cfc63f6e6bbd710e207461a5ff703bfd0e29313fe770b50c4ada80a',1,'main.cpp']]],
+  ['usergbprimitivecreator',['UseRGBPrimitiveCreator',['../main_8cpp.html#a03a6af752ae461b0c1de2af89dfd7e26aafb5f79e6b5b9a81a490797664618c85',1,'main.cpp']]]
 ];

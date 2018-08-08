@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['rgbfigure',['RGBFigure',['../classRGBFigure.html#a01404026463eb95d9374f1869ab27c07',1,'RGBFigure']]]
+  ['main',['main',['../main_8cpp.html#a81ce304348a420752ee080480d2b3095',1,'main.cpp']]]
 ];

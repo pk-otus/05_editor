@@ -100,14 +100,14 @@ Inheritance diagram for IGraphicPrimitiveCreator:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aa722d5123efee28e1d60735ee2111cd5"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIGraphicPrimitiveCreator.html#aa722d5123efee28e1d60735ee2111cd5">~IGraphicPrimitiveCreator</a> ()=default</td></tr>
 <tr class="separator:aa722d5123efee28e1d60735ee2111cd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4f49bb03ccf3ef15f2b0f25ea8ca65e"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIGraphicPrimitiveCreator.html#ae4f49bb03ccf3ef15f2b0f25ea8ca65e">SetBrushColor</a> (uint64_t color)=0</td></tr>
-<tr class="separator:ae4f49bb03ccf3ef15f2b0f25ea8ca65e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a311fd7362c79af22a332fe1ced33a4fd"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classIGraphicPrimitive.html">IGraphicPrimitive</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIGraphicPrimitiveCreator.html#a311fd7362c79af22a332fe1ced33a4fd">CreateTriangle</a> () const =0</td></tr>
-<tr class="separator:a311fd7362c79af22a332fe1ced33a4fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a194c41dcd33fd241adcf96c9894d912f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classIGraphicPrimitive.html">IGraphicPrimitive</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIGraphicPrimitiveCreator.html#a194c41dcd33fd241adcf96c9894d912f">CreateCircle</a> () const =0</td></tr>
-<tr class="separator:a194c41dcd33fd241adcf96c9894d912f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b9007ae09af37785e491f2ffb585e71"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIGraphicPrimitiveCreator.html#a8b9007ae09af37785e491f2ffb585e71">DeletePrimitive</a> (<a class="el" href="classIGraphicPrimitive.html">IGraphicPrimitive</a> *p) const =0</td></tr>
-<tr class="separator:a8b9007ae09af37785e491f2ffb585e71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92b2bc51f28c2b7d1043634ee00da6c3"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIGraphicPrimitiveCreator.html#a92b2bc51f28c2b7d1043634ee00da6c3">TrySetBrushColor</a> (color_type col)=0</td></tr>
+<tr class="separator:a92b2bc51f28c2b7d1043634ee00da6c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abaed4bbe8dfd821c9ad9e28115c6674a"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="classIGraphicPrimitive.html">IGraphicPrimitive</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIGraphicPrimitiveCreator.html#abaed4bbe8dfd821c9ad9e28115c6674a">CreateTriangle</a> () const =0</td></tr>
+<tr class="separator:abaed4bbe8dfd821c9ad9e28115c6674a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c6441f68d6489578fc420676a84c685"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="classIGraphicPrimitive.html">IGraphicPrimitive</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIGraphicPrimitiveCreator.html#a3c6441f68d6489578fc420676a84c685">CreateCircle</a> () const =0</td></tr>
+<tr class="separator:a3c6441f68d6489578fc420676a84c685"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26ab45fc3365eb04a314a3091e0fee18"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIGraphicPrimitiveCreator.html#a26ab45fc3365eb04a314a3091e0fee18">DeletePrimitive</a> (const <a class="el" href="classIGraphicPrimitive.html">IGraphicPrimitive</a> *p) const =0</td></tr>
+<tr class="separator:a26ab45fc3365eb04a314a3091e0fee18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="aa722d5123efee28e1d60735ee2111cd5"></a>
@@ -134,7 +134,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a194c41dcd33fd241adcf96c9894d912f"></a>
+<a class="anchor" id="a3c6441f68d6489578fc420676a84c685"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -142,7 +142,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classIGraphicPrimitive.html">IGraphicPrimitive</a>* IGraphicPrimitiveCreator::CreateCircle </td>
+          <td class="memname">virtual const <a class="el" href="classIGraphicPrimitive.html">IGraphicPrimitive</a>* IGraphicPrimitiveCreator::CreateCircle </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -155,11 +155,11 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classRGBGraphicPrimitiveCreator.html#a96e610e7579e07aa24af7e4a132aaf61">RGBGraphicPrimitiveCreator</a>, and <a class="el" href="classBlackWhiteGraphicPrimitiveCreator.html#a0e098e4ddb73de705b70e326304f5157">BlackWhiteGraphicPrimitiveCreator</a>.</p>
+<p>Implemented in <a class="el" href="classRGBGraphicPrimitiveCreator.html#afba8abfe36976ad5a7de4ba8aedecbb5">RGBGraphicPrimitiveCreator</a>, and <a class="el" href="classBlackWhiteGraphicPrimitiveCreator.html#a854301ff5e4ec45c5b80bf85e0550d7d">BlackWhiteGraphicPrimitiveCreator</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a311fd7362c79af22a332fe1ced33a4fd"></a>
+<a class="anchor" id="abaed4bbe8dfd821c9ad9e28115c6674a"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -167,7 +167,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classIGraphicPrimitive.html">IGraphicPrimitive</a>* IGraphicPrimitiveCreator::CreateTriangle </td>
+          <td class="memname">virtual const <a class="el" href="classIGraphicPrimitive.html">IGraphicPrimitive</a>* IGraphicPrimitiveCreator::CreateTriangle </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -180,11 +180,11 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classRGBGraphicPrimitiveCreator.html#a42d689ca764165f88b44d9204b78aeca">RGBGraphicPrimitiveCreator</a>, and <a class="el" href="classBlackWhiteGraphicPrimitiveCreator.html#a838e456b712b14a4d1dfbc405f75f767">BlackWhiteGraphicPrimitiveCreator</a>.</p>
+<p>Implemented in <a class="el" href="classRGBGraphicPrimitiveCreator.html#a77eb261e95fd6a13dace6c76b7b5fe4c">RGBGraphicPrimitiveCreator</a>, and <a class="el" href="classBlackWhiteGraphicPrimitiveCreator.html#a2c45139368d65a1eba81b7633506f9d3">BlackWhiteGraphicPrimitiveCreator</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a8b9007ae09af37785e491f2ffb585e71"></a>
+<a class="anchor" id="a26ab45fc3365eb04a314a3091e0fee18"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -194,7 +194,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual void IGraphicPrimitiveCreator::DeletePrimitive </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classIGraphicPrimitive.html">IGraphicPrimitive</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="classIGraphicPrimitive.html">IGraphicPrimitive</a> *&#160;</td>
           <td class="paramname"><em>p</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -206,11 +206,11 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classRGBGraphicPrimitiveCreator.html#ac7af54ec54651d63d28b11fdb7cf6282">RGBGraphicPrimitiveCreator</a>, and <a class="el" href="classBlackWhiteGraphicPrimitiveCreator.html#af00023445f818070379a97687994c946">BlackWhiteGraphicPrimitiveCreator</a>.</p>
+<p>Implemented in <a class="el" href="classRGBGraphicPrimitiveCreator.html#a219830ebf67d8b266de0926a6daa8335">RGBGraphicPrimitiveCreator</a>, and <a class="el" href="classBlackWhiteGraphicPrimitiveCreator.html#ab7a7b6c7d2a30b138e445e35d80714b6">BlackWhiteGraphicPrimitiveCreator</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ae4f49bb03ccf3ef15f2b0f25ea8ca65e"></a>
+<a class="anchor" id="a92b2bc51f28c2b7d1043634ee00da6c3"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -218,10 +218,10 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool IGraphicPrimitiveCreator::SetBrushColor </td>
+          <td class="memname">virtual bool IGraphicPrimitiveCreator::TrySetBrushColor </td>
           <td>(</td>
-          <td class="paramtype">uint64_t&#160;</td>
-          <td class="paramname"><em>color</em></td><td>)</td>
+          <td class="paramtype">color_type&#160;</td>
+          <td class="paramname"><em>col</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -232,7 +232,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classRGBGraphicPrimitiveCreator.html#ac7d39f5562c58ea64b4cc35b27caf434">RGBGraphicPrimitiveCreator</a>, and <a class="el" href="classBlackWhiteGraphicPrimitiveCreator.html#a9587d5535b79b1f625b2e96848d56ab3">BlackWhiteGraphicPrimitiveCreator</a>.</p>
+<p>Implemented in <a class="el" href="classRGBGraphicPrimitiveCreator.html#a8d12ccc9692617ba204bbcfb31b1fbdd">RGBGraphicPrimitiveCreator</a>, and <a class="el" href="classBlackWhiteGraphicPrimitiveCreator.html#a57abe91bf651a22cc9b0f6dfc16f4537">BlackWhiteGraphicPrimitiveCreator</a>.</p>
 
 </div>
 </div>
@@ -242,7 +242,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Aug 7 2018 09:15:54 for My Project by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 8 2018 07:06:37 for My Project by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
