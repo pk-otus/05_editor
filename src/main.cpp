@@ -5,7 +5,7 @@ int main(int, char *[])
 {
 	using namespace GraphicEditor;
 
-	DocumentEditors		editor_type = DocumentEditors::UseLocalFileDocumentEditor;
+	DocumentEditors		editor_type = DocumentEditors::UseDatabaseDocumentEditor;
 
 //#define USE_BLACKANDWHITE 1
 

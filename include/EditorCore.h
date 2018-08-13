@@ -12,7 +12,8 @@ namespace GraphicEditor
 
 	enum class DocumentEditors
 	{
-		UseLocalFileDocumentEditor
+		UseLocalFileDocumentEditor,
+		UseDatabaseDocumentEditor
 	};
 
 	class EditorCore

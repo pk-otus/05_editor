@@ -5,6 +5,7 @@
 #include "../include/BW/BlackWhitePrimitiveCreator.h"
 #include "../include/RGB/RGBPrimitiveCreator.h"
 #include "../include/LocalEditor/LocalDocumentEditor.h"
+#include "../include/DataBaseEditor/DataBaseEditor.h"
 
 using namespace GraphicEditor;
 
@@ -29,6 +30,8 @@ namespace
 		{
 		case DocumentEditors::UseLocalFileDocumentEditor:
 			return new LocalFileDocumentEditor("c:\\work\\");
+		case DocumentEditors::UseDatabaseDocumentEditor:
+			return new DatabaseDocumentEditor("127.0.0.1", 7777);
 		default:
 			throw std::logic_error("unsupported file editor");
 		}
