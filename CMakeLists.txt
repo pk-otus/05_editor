@@ -28,6 +28,9 @@ endif()
 
 install(TARGETS editor RUNTIME DESTINATION bin)
 
+enable_testing()
+add_subdirectory(test)
+
 set(CPACK_GENERATOR DEB)
 
 set(CPACK_PACKAGE_VERSION_MAJOR "${PROJECT_VERSION_MAJOR}")
@@ -37,4 +40,5 @@ set(CPACK_PACKAGE_VERSION_PATCH "${PROJECT_VERSION_PATCH}")
 set(CPACK_PACKAGE_CONTACT a@a.a)
 
 include (CPack)
+
 
