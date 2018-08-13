@@ -27,6 +27,9 @@ int main(int, char *[])
 		auto circle1 = editor.EditMenu()->CreateSquare();
 
 		triangle1->Draw();
+		editor.EditMenu()->TrySetBrushColor(COLOR_BLACK);
+		editor.EditMenu()->ChangeFillColor(triangle1);
+		triangle1->Draw();
 		circle1->Draw();
 
 		editor.EditMenu()->DeletePrimitive(triangle1);
