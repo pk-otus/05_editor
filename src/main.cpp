@@ -21,10 +21,10 @@ int main(int, char *[])
 		editor.FileMenu()->CreateNewDocument("test.bmp");
 
 		editor.EditMenu()->TrySetBrushColor(COLOR_RED);
-		auto triangle1 = editor.EditMenu()->CreateTriangle();
+		auto triangle1 = editor.EditMenu()->CreateHexagon();
 
 		editor.EditMenu()->TrySetBrushColor(COLOR_WHITE); 
-		auto circle1 = editor.EditMenu()->CreateCircle();
+		auto circle1 = editor.EditMenu()->CreateSquare();
 
 		triangle1->Draw();
 		circle1->Draw();

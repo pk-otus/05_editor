@@ -15,6 +15,15 @@ namespace GraphicEditor
 		{
 			return new CircleBW(isBlackBrhush);
 		}
+		const IGraphicPrimitive* CreateSquare() const override
+		{
+			return new SquareBW(isBlackBrhush);
+		}
+		const IGraphicPrimitive* CreateHexagon() const override
+		{
+			return new HexagonBW(isBlackBrhush);
+		}
+
 		void DeletePrimitive(const IGraphicPrimitive* p) const override
 		{
 			delete p;
@@ -34,7 +43,7 @@ namespace GraphicEditor
 				return false; //not changed
 			}
 			return true; //changed
-		}
+		}		
 	private:
 		bool isBlackBrhush = true;
 	};

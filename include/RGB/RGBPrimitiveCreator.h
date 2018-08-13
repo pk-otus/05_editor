@@ -15,6 +15,14 @@ namespace GraphicEditor
 		{
 			return new CircleRGB(brush_color);
 		}
+		const IGraphicPrimitive* CreateSquare() const override
+		{
+			return new SquareRGB(brush_color);
+		}
+		const IGraphicPrimitive* CreateHexagon() const override
+		{
+			return new HexagonRGB(brush_color);
+		}
 		void DeletePrimitive(const IGraphicPrimitive* p) const override
 		{
 			delete p;
@@ -25,6 +33,7 @@ namespace GraphicEditor
 			brush_color = col;
 			return true; //changed
 		}
+				
 	private:
 		color_type brush_color = COLOR_BLACK;
 	};

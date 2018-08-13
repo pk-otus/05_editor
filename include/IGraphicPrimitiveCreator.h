@@ -14,6 +14,8 @@ namespace GraphicEditor
 
 		virtual const IGraphicPrimitive*	CreateTriangle()	const = 0;
 		virtual const IGraphicPrimitive*	CreateCircle()		const = 0;
+		virtual const IGraphicPrimitive*	CreateSquare()		const = 0;
+		virtual const IGraphicPrimitive*	CreateHexagon()		const = 0;
 
 		virtual void						DeletePrimitive(const IGraphicPrimitive* p) const = 0;
 
