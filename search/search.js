@@ -7,28 +7,16 @@
 
 var indexSectionsWithContent =
 {
-  0: "cdefgimptuv~",
-  1: "ei",
-  2: "g",
-  3: "ceimv",
-  4: "cdefimt~",
-  5: "c",
-  6: "dep",
-  7: "cu",
-  8: "p"
+  0: "pv",
+  1: "v",
+  2: "p"
 };
 
 var indexSectionNames =
 {
   0: "all",
-  1: "classes",
-  2: "namespaces",
-  3: "files",
-  4: "functions",
-  5: "typedefs",
-  6: "enums",
-  7: "enumvalues",
-  8: "defines"
+  1: "files",
+  2: "defines"
 };
 
 function convertToId(search)
