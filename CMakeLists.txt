@@ -11,10 +11,9 @@ configure_file(version.h.in ${PROJECT_SOURCE_DIR}/version.h)
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-file(GLOB_RECURSE GRAPHEDITOR_FILES *.cpp)
 file(GLOB_RECURSE GRAPHEDITOR_HEADERS *.h)
 
-add_executable(editor ${GRAPHEDITOR_HEADERS} ${GRAPHEDITOR_FILES})
+add_executable(editor ${GRAPHEDITOR_HEADERS} EditorCore.cpp main.cpp)
 
 if ("${CMAKE_CXX_COMPILER_ID}" STREQUAL "GNU")
 	set_target_properties(editor PROPERTIES
