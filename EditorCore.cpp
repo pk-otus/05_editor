@@ -1,5 +1,7 @@
 #include "EditorCore.h"
 
+#include <exception>
+
 #include "BW/BlackWhitePrimitiveCreator.h"
 #include "RGB/RGBPrimitiveCreator.h"
 #include "LocalEditor/LocalDocumentEditor.h"
