@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['useblackwhiteprimitivecreator',['UseBlackWhitePrimitiveCreator',['../main_8cpp.html#a03a6af752ae461b0c1de2af89dfd7e26abba8b6c6620945660193dd4f97474745',1,'main.cpp']]],
-  ['uselocalfiledocumenteditor',['UseLocalFileDocumentEditor',['../main_8cpp.html#a63a2a9ae99cfc63f6e6bbd710e207461a5ff703bfd0e29313fe770b50c4ada80a',1,'main.cpp']]],
-  ['usergbprimitivecreator',['UseRGBPrimitiveCreator',['../main_8cpp.html#a03a6af752ae461b0c1de2af89dfd7e26aafb5f79e6b5b9a81a490797664618c85',1,'main.cpp']]]
+  ['color_5fblack',['COLOR_BLACK',['../namespaceGraphicEditor.html#a276743d73a529994a05d975b4864163da27ae2fe5c3c8ad27c69d1d47de2e87ad',1,'GraphicEditor']]],
+  ['color_5fblue',['COLOR_BLUE',['../namespaceGraphicEditor.html#a276743d73a529994a05d975b4864163da3d93bdb551f43ccab1d0f0edaa3d34e6',1,'GraphicEditor']]],
+  ['color_5fgreen',['COLOR_GREEN',['../namespaceGraphicEditor.html#a276743d73a529994a05d975b4864163da4608a4a36688976db9dea78ef6240121',1,'GraphicEditor']]],
+  ['color_5fred',['COLOR_RED',['../namespaceGraphicEditor.html#a276743d73a529994a05d975b4864163da83cf6b8f2890f4092fb073db946049b7',1,'GraphicEditor']]],
+  ['color_5fwhite',['COLOR_WHITE',['../namespaceGraphicEditor.html#a276743d73a529994a05d975b4864163dae9ad50c05750558a4026f4a524fcba6b',1,'GraphicEditor']]]
 ];

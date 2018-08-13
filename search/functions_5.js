@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['getcolor',['GetColor',['../classRGBFigure.html#a1df6f72696af026b14bbd8ed1de938f4',1,'RGBFigure']]],
-  ['graphiceditor',['GraphicEditor',['../classGraphicEditor.html#a37e14c6e1528df412e1b27b6376c53ab',1,'GraphicEditor']]]
+  ['main',['main',['../main_8cpp.html#a81ce304348a420752ee080480d2b3095',1,'main.cpp']]]
 ];

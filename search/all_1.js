@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['circlebw',['CircleBW',['../classCircleBW.html',1,'CircleBW'],['../classCircleBW.html#af7996e1966a5c2b07b3cebeb6391ce47',1,'CircleBW::CircleBW()']]],
-  ['circlergb',['CircleRGB',['../classCircleRGB.html',1,'CircleRGB'],['../classCircleRGB.html#a41569183b6b2be0178905218fdd9ed33',1,'CircleRGB::CircleRGB()']]],
-  ['createcircle',['CreateCircle',['../classIGraphicPrimitiveCreator.html#a3c6441f68d6489578fc420676a84c685',1,'IGraphicPrimitiveCreator::CreateCircle()'],['../classBlackWhiteGraphicPrimitiveCreator.html#a854301ff5e4ec45c5b80bf85e0550d7d',1,'BlackWhiteGraphicPrimitiveCreator::CreateCircle()'],['../classRGBGraphicPrimitiveCreator.html#afba8abfe36976ad5a7de4ba8aedecbb5',1,'RGBGraphicPrimitiveCreator::CreateCircle()']]],
-  ['createnewdocument',['CreateNewDocument',['../classIDocumentEditor.html#ad064e4e20eec88e8eedd1aba18be2f94',1,'IDocumentEditor::CreateNewDocument()'],['../classLocalFileDocumentEditor.html#a7dee656b9b93a1818e3d7e53537d6ecb',1,'LocalFileDocumentEditor::CreateNewDocument()']]],
-  ['createtriangle',['CreateTriangle',['../classIGraphicPrimitiveCreator.html#abaed4bbe8dfd821c9ad9e28115c6674a',1,'IGraphicPrimitiveCreator::CreateTriangle()'],['../classBlackWhiteGraphicPrimitiveCreator.html#a2c45139368d65a1eba81b7633506f9d3',1,'BlackWhiteGraphicPrimitiveCreator::CreateTriangle()'],['../classRGBGraphicPrimitiveCreator.html#a77eb261e95fd6a13dace6c76b7b5fe4c',1,'RGBGraphicPrimitiveCreator::CreateTriangle()']]]
+  ['deleteprimitive',['DeletePrimitive',['../classGraphicEditor_1_1IGraphicPrimitiveCreator.html#a55d69f118bb19a30f11726b25f516d25',1,'GraphicEditor::IGraphicPrimitiveCreator']]],
+  ['documenteditors',['DocumentEditors',['../namespaceGraphicEditor.html#a8c91ee8a93b0e944a9bd462c0e6f4fa2',1,'GraphicEditor']]],
+  ['draw',['Draw',['../classGraphicEditor_1_1IGraphicPrimitive.html#a559638a0cb5b94e47d1bed455668713b',1,'GraphicEditor::IGraphicPrimitive']]]
 ];

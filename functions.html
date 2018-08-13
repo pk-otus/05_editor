@@ -37,6 +37,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -61,7 +62,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
-      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
       <li class="current"><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -71,28 +71,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions_func.html"><span>Functions</span></a></li>
     </ul>
   </div>
-  <div id="navrow4" class="tabs3">
-    <ul class="tablist">
-      <li><a href="#index_b"><span>b</span></a></li>
-      <li><a href="#index_c"><span>c</span></a></li>
-      <li><a href="#index_d"><span>d</span></a></li>
-      <li><a href="#index_e"><span>e</span></a></li>
-      <li><a href="#index_f"><span>f</span></a></li>
-      <li><a href="#index_g"><span>g</span></a></li>
-      <li><a href="#index_i"><span>i</span></a></li>
-      <li><a href="#index_l"><span>l</span></a></li>
-      <li><a href="#index_r"><span>r</span></a></li>
-      <li><a href="#index_t"><span>t</span></a></li>
-      <li class="current"><a href="#index_~"><span>~</span></a></li>
-    </ul>
-  </div>
 </div><!-- top -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -102,138 +87,54 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 
 <div class="contents">
-<div class="textblock">Here is a list of all class members with links to the classes they belong to:</div>
-
-<h3><a class="anchor" id="index_b"></a>- b -</h3><ul>
-<li>BlackAndWhiteFigure()
-: <a class="el" href="classBlackAndWhiteFigure.html#a195f06dc4cd71b83cf0bb8594fa784b7">BlackAndWhiteFigure</a>
-</li>
-</ul>
-
-
-<h3><a class="anchor" id="index_c"></a>- c -</h3><ul>
-<li>CircleBW()
-: <a class="el" href="classCircleBW.html#af7996e1966a5c2b07b3cebeb6391ce47">CircleBW</a>
-</li>
-<li>CircleRGB()
-: <a class="el" href="classCircleRGB.html#a41569183b6b2be0178905218fdd9ed33">CircleRGB</a>
-</li>
+<div class="textblock">Here is a list of all class members with links to the classes they belong to:</div><ul>
 <li>CreateCircle()
-: <a class="el" href="classBlackWhiteGraphicPrimitiveCreator.html#a854301ff5e4ec45c5b80bf85e0550d7d">BlackWhiteGraphicPrimitiveCreator</a>
-, <a class="el" href="classIGraphicPrimitiveCreator.html#a3c6441f68d6489578fc420676a84c685">IGraphicPrimitiveCreator</a>
-, <a class="el" href="classRGBGraphicPrimitiveCreator.html#afba8abfe36976ad5a7de4ba8aedecbb5">RGBGraphicPrimitiveCreator</a>
+: <a class="el" href="classGraphicEditor_1_1IGraphicPrimitiveCreator.html#a86d236e649ce0b360d6545ce61c28cce">GraphicEditor::IGraphicPrimitiveCreator</a>
 </li>
 <li>CreateNewDocument()
-: <a class="el" href="classIDocumentEditor.html#ad064e4e20eec88e8eedd1aba18be2f94">IDocumentEditor</a>
-, <a class="el" href="classLocalFileDocumentEditor.html#a7dee656b9b93a1818e3d7e53537d6ecb">LocalFileDocumentEditor</a>
+: <a class="el" href="classGraphicEditor_1_1IDocumentEditor.html#aa8c496662c5c94f43292e79f84e45247">GraphicEditor::IDocumentEditor</a>
 </li>
 <li>CreateTriangle()
-: <a class="el" href="classBlackWhiteGraphicPrimitiveCreator.html#a2c45139368d65a1eba81b7633506f9d3">BlackWhiteGraphicPrimitiveCreator</a>
-, <a class="el" href="classIGraphicPrimitiveCreator.html#abaed4bbe8dfd821c9ad9e28115c6674a">IGraphicPrimitiveCreator</a>
-, <a class="el" href="classRGBGraphicPrimitiveCreator.html#a77eb261e95fd6a13dace6c76b7b5fe4c">RGBGraphicPrimitiveCreator</a>
+: <a class="el" href="classGraphicEditor_1_1IGraphicPrimitiveCreator.html#a2b4223a63c984d4fd3883a9c9cb1f28c">GraphicEditor::IGraphicPrimitiveCreator</a>
 </li>
-</ul>
-
-
-<h3><a class="anchor" id="index_d"></a>- d -</h3><ul>
 <li>DeletePrimitive()
-: <a class="el" href="classBlackWhiteGraphicPrimitiveCreator.html#ab7a7b6c7d2a30b138e445e35d80714b6">BlackWhiteGraphicPrimitiveCreator</a>
-, <a class="el" href="classIGraphicPrimitiveCreator.html#a26ab45fc3365eb04a314a3091e0fee18">IGraphicPrimitiveCreator</a>
-, <a class="el" href="classRGBGraphicPrimitiveCreator.html#a219830ebf67d8b266de0926a6daa8335">RGBGraphicPrimitiveCreator</a>
+: <a class="el" href="classGraphicEditor_1_1IGraphicPrimitiveCreator.html#a55d69f118bb19a30f11726b25f516d25">GraphicEditor::IGraphicPrimitiveCreator</a>
 </li>
 <li>Draw()
-: <a class="el" href="classCircleBW.html#aa20b9658bd48831722c0fdb48f59c4f7">CircleBW</a>
-, <a class="el" href="classCircleRGB.html#aff94c5a8345494b8076af5c993976776">CircleRGB</a>
-, <a class="el" href="classIGraphicPrimitive.html#a7f71276c6d28bee2b2fe1af623e34822">IGraphicPrimitive</a>
-, <a class="el" href="classTriangleBW.html#a81acc48be306317ad9894817a6a89678">TriangleBW</a>
-, <a class="el" href="classTriangleRGB.html#a39492c4e5df0e740f40d60bb7023292c">TriangleRGB</a>
+: <a class="el" href="classGraphicEditor_1_1IGraphicPrimitive.html#a559638a0cb5b94e47d1bed455668713b">GraphicEditor::IGraphicPrimitive</a>
 </li>
-</ul>
-
-
-<h3><a class="anchor" id="index_e"></a>- e -</h3><ul>
 <li>EditMenu()
-: <a class="el" href="classGraphicEditor.html#a9fe5abc9659c1494e4ec496a3dcfc37c">GraphicEditor</a>
+: <a class="el" href="classGraphicEditor_1_1EditorCore.html#a784dcacc831839e9daf3bd86824f25e1">GraphicEditor::EditorCore</a>
+</li>
+<li>EditorCore()
+: <a class="el" href="classGraphicEditor_1_1EditorCore.html#a662bdd5dee0eb3a1e60fd62ced83c598">GraphicEditor::EditorCore</a>
 </li>
 <li>ExportToFile()
-: <a class="el" href="classIDocumentEditor.html#ae6d605b8d5d0ee0a9761757b22ede31f">IDocumentEditor</a>
-, <a class="el" href="classLocalFileDocumentEditor.html#a63123aefd46c9d25d5a6c03c610b7914">LocalFileDocumentEditor</a>
+: <a class="el" href="classGraphicEditor_1_1IDocumentEditor.html#a0c8874653d9249c1af25b05034fa72bb">GraphicEditor::IDocumentEditor</a>
 </li>
-</ul>
-
-
-<h3><a class="anchor" id="index_f"></a>- f -</h3><ul>
 <li>FileMenu()
-: <a class="el" href="classGraphicEditor.html#a00edf74441090fb8ddd8f6168d838618">GraphicEditor</a>
+: <a class="el" href="classGraphicEditor_1_1EditorCore.html#a989288ec20d3729fc7560c0fc1d15a14">GraphicEditor::EditorCore</a>
 </li>
-</ul>
-
-
-<h3><a class="anchor" id="index_g"></a>- g -</h3><ul>
-<li>GetColor()
-: <a class="el" href="classRGBFigure.html#a1df6f72696af026b14bbd8ed1de938f4">RGBFigure</a>
-</li>
-<li>GraphicEditor()
-: <a class="el" href="classGraphicEditor.html#a37e14c6e1528df412e1b27b6376c53ab">GraphicEditor</a>
-</li>
-</ul>
-
-
-<h3><a class="anchor" id="index_i"></a>- i -</h3><ul>
 <li>ImportFromFile()
-: <a class="el" href="classIDocumentEditor.html#ab8bdb4eff57edf6b02fdb1f08b501c36">IDocumentEditor</a>
-, <a class="el" href="classLocalFileDocumentEditor.html#a8a8569a005a49a953530110ed7d1bcc8">LocalFileDocumentEditor</a>
-</li>
-<li>IsBlack()
-: <a class="el" href="classBlackAndWhiteFigure.html#a4230fdbd1859d7eb69b35400d4f75ccc">BlackAndWhiteFigure</a>
-</li>
-</ul>
-
-
-<h3><a class="anchor" id="index_l"></a>- l -</h3><ul>
-<li>LocalFileDocumentEditor()
-: <a class="el" href="classLocalFileDocumentEditor.html#a6af8174d069404c1179cdb5cb4d0f917">LocalFileDocumentEditor</a>
-</li>
-</ul>
-
-
-<h3><a class="anchor" id="index_r"></a>- r -</h3><ul>
-<li>RGBFigure()
-: <a class="el" href="classRGBFigure.html#a444c053da92362ce43bab03527d53280">RGBFigure</a>
-</li>
-</ul>
-
-
-<h3><a class="anchor" id="index_t"></a>- t -</h3><ul>
-<li>TriangleBW()
-: <a class="el" href="classTriangleBW.html#ad3f7a09d229acb0963b36f78e6916c9b">TriangleBW</a>
-</li>
-<li>TriangleRGB()
-: <a class="el" href="classTriangleRGB.html#a1a72766e0327de4955235c74babe3eee">TriangleRGB</a>
+: <a class="el" href="classGraphicEditor_1_1IDocumentEditor.html#ad11106a353404322a435b78d55dfa4a5">GraphicEditor::IDocumentEditor</a>
 </li>
 <li>TrySetBrushColor()
-: <a class="el" href="classBlackWhiteGraphicPrimitiveCreator.html#a57abe91bf651a22cc9b0f6dfc16f4537">BlackWhiteGraphicPrimitiveCreator</a>
-, <a class="el" href="classIGraphicPrimitiveCreator.html#a92b2bc51f28c2b7d1043634ee00da6c3">IGraphicPrimitiveCreator</a>
-, <a class="el" href="classRGBGraphicPrimitiveCreator.html#a8d12ccc9692617ba204bbcfb31b1fbdd">RGBGraphicPrimitiveCreator</a>
+: <a class="el" href="classGraphicEditor_1_1IGraphicPrimitiveCreator.html#a68cd646253df355e94154a7bf076531d">GraphicEditor::IGraphicPrimitiveCreator</a>
 </li>
-</ul>
-
-
-<h3><a class="anchor" id="index_~"></a>- ~ -</h3><ul>
 <li>~IDocumentEditor()
-: <a class="el" href="classIDocumentEditor.html#ae095b05cabc3d0758e6fa24b4c514405">IDocumentEditor</a>
+: <a class="el" href="classGraphicEditor_1_1IDocumentEditor.html#ac5717e6d1bbde12a20f3071e325f44e0">GraphicEditor::IDocumentEditor</a>
 </li>
 <li>~IGraphicPrimitive()
-: <a class="el" href="classIGraphicPrimitive.html#a599991b14f19c917b9a57373727438fa">IGraphicPrimitive</a>
+: <a class="el" href="classGraphicEditor_1_1IGraphicPrimitive.html#a9718a0db7887e358d4e7c54003160a4f">GraphicEditor::IGraphicPrimitive</a>
 </li>
 <li>~IGraphicPrimitiveCreator()
-: <a class="el" href="classIGraphicPrimitiveCreator.html#aa722d5123efee28e1d60735ee2111cd5">IGraphicPrimitiveCreator</a>
+: <a class="el" href="classGraphicEditor_1_1IGraphicPrimitiveCreator.html#a30bdb24cc41148b3fdb7d60bd0539c6b">GraphicEditor::IGraphicPrimitiveCreator</a>
 </li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Aug 8 2018 07:06:37 for My Project by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Aug 13 2018 10:35:05 for My Project by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

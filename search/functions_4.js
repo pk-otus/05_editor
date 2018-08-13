@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['filemenu',['FileMenu',['../classGraphicEditor.html#a00edf74441090fb8ddd8f6168d838618',1,'GraphicEditor']]]
+  ['importfromfile',['ImportFromFile',['../classGraphicEditor_1_1IDocumentEditor.html#ad11106a353404322a435b78d55dfa4a5',1,'GraphicEditor::IDocumentEditor']]]
 ];

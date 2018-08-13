@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['blackandwhitefigure',['BlackAndWhiteFigure',['../classBlackAndWhiteFigure.html',1,'']]],
-  ['blackwhitegraphicprimitivecreator',['BlackWhiteGraphicPrimitiveCreator',['../classBlackWhiteGraphicPrimitiveCreator.html',1,'']]]
+  ['editorcore',['EditorCore',['../classGraphicEditor_1_1EditorCore.html',1,'GraphicEditor']]]
 ];

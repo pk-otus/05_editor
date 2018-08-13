@@ -1,9 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classBlackAndWhiteFigure.html" title="BlackAndWhiteFigure" alt="" coords="6,12,154,39"/>
-<area shape="rect" id="node2" href="$classCircleBW.html" title="CircleBW" alt="" coords="213,5,291,32"/>
-<area shape="rect" id="node3" href="$classTriangleBW.html" title="TriangleBW" alt="" coords="207,56,297,83"/>
-<area shape="rect" id="node4" href="$classIGraphicPrimitive.html" title="IGraphicPrimitive" alt="" coords="19,69,141,96"/>
-<area shape="rect" id="node5" href="$classCircleRGB.html" title="CircleRGB" alt="" coords="209,107,295,133"/>
-<area shape="rect" id="node6" href="$classTriangleRGB.html" title="TriangleRGB" alt="" coords="203,157,301,184"/>
-<area shape="rect" id="node7" href="$classRGBFigure.html" title="RGBFigure" alt="" coords="37,132,123,159"/>
-</map>
