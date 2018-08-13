@@ -1,6 +1,6 @@
 #include "EditorCore.h"
 
-#include <exception>
+#include <stdexcept>
 
 #include "BW/BlackWhitePrimitiveCreator.h"
 #include "RGB/RGBPrimitiveCreator.h"
