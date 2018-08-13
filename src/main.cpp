@@ -1,5 +1,5 @@
-#include "EditorCore.h"
-#include "IGraphicPrimitive.h"
+#include "../include/EditorCore.h"
+#include "../include/IGraphicPrimitive.h"
 
 int main(int, char *[])
 {

@@ -1,10 +1,10 @@
-#include "EditorCore.h"
+#include "../include/EditorCore.h"
 
 #include <stdexcept>
 
-#include "BW/BlackWhitePrimitiveCreator.h"
-#include "RGB/RGBPrimitiveCreator.h"
-#include "LocalEditor/LocalDocumentEditor.h"
+#include "../include/BW/BlackWhitePrimitiveCreator.h"
+#include "../include/RGB/RGBPrimitiveCreator.h"
+#include "../include/LocalEditor/LocalDocumentEditor.h"
 
 using namespace GraphicEditor;
 
