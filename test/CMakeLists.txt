@@ -18,7 +18,7 @@ INCLUDE_DIRECTORIES ${GTEST_INCLUDE_DIRS}
 target_link_libraries(grapheditor_test_google ${GTEST_LIBRARIES})
 
 if ("${CMAKE_CXX_COMPILER_ID}" STREQUAL "GNU")
-	target_link_libraries(googletest_main_cli pthread)
+	target_link_libraries(grapheditor_test_google pthread)
 endif()
 
 add_test(StorageTest grapheditor_test_google)
