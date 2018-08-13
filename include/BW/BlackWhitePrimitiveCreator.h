@@ -1,25 +1,26 @@
 #pragma  once
 #include "../IGraphicPrimitiveCreator.h"
 #include "ConcreteFiguresBW.h"
+#include <cassert>
 
 namespace GraphicEditor
 {
 	class BlackWhiteGraphicPrimitiveCreator : public IGraphicPrimitiveCreator
 	{
 	public:
-		const IGraphicPrimitive* CreateTriangle() const override
+		IGraphicPrimitive* CreateTriangle() const override
 		{
 			return new TriangleBW(isBlackBrhush);
 		}
-		const IGraphicPrimitive* CreateCircle() const override
+		IGraphicPrimitive* CreateCircle() const override
 		{
 			return new CircleBW(isBlackBrhush);
 		}
-		const IGraphicPrimitive* CreateSquare() const override
+		IGraphicPrimitive* CreateSquare() const override
 		{
 			return new SquareBW(isBlackBrhush);
 		}
-		const IGraphicPrimitive* CreateHexagon() const override
+		IGraphicPrimitive* CreateHexagon() const override
 		{
 			return new HexagonBW(isBlackBrhush);
 		}
@@ -43,7 +44,17 @@ namespace GraphicEditor
 				return false; //not changed
 			}
 			return true; //changed
-		}		
+		}
+		void ChangeFillColor(IGraphicPrimitive* p) const override
+		{
+			auto bw = dynamic_cast<BlackAndWhiteFigure*>(p);
+			assert(bw);
+
+			if (isBlackBrhush)
+				bw->SetBlack();
+			else
+				bw->SetWhite();			
+		}
 	private:
 		bool isBlackBrhush = true;
 	};

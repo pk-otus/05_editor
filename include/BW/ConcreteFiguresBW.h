@@ -2,13 +2,12 @@
 #include <iostream>
 
 #include "BlackAndWhiteFigure.h"
-#include "../IGraphicPrimitive.h"
 
 namespace GraphicEditor
 {
 	inline std::string BWColorName(bool black) { return black ? "black" : "white"; }
 
-	class TriangleBW : BlackAndWhiteFigure, public IGraphicPrimitive
+	class TriangleBW : public BlackAndWhiteFigure
 	{
 	public:
 		TriangleBW(bool bw) : BlackAndWhiteFigure(bw) {}
@@ -18,7 +17,7 @@ namespace GraphicEditor
 		}
 	};
 
-	class CircleBW : BlackAndWhiteFigure, public IGraphicPrimitive
+	class CircleBW : public BlackAndWhiteFigure
 	{
 	public:
 		CircleBW(bool bw) : BlackAndWhiteFigure(bw) {}
@@ -27,7 +26,7 @@ namespace GraphicEditor
 				<< BWColorName(IsBlack()) << '\n';
 		}
 	};
-	class SquareBW : BlackAndWhiteFigure, public IGraphicPrimitive
+	class SquareBW : public BlackAndWhiteFigure
 	{
 	public:
 		SquareBW(bool bw) : BlackAndWhiteFigure(bw) {}
@@ -37,7 +36,7 @@ namespace GraphicEditor
 		}
 	};
 
-	class HexagonBW : BlackAndWhiteFigure, public IGraphicPrimitive
+	class HexagonBW : public BlackAndWhiteFigure
 	{
 	public:
 		HexagonBW(bool bw) : BlackAndWhiteFigure(bw) {}

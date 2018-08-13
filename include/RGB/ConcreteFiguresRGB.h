@@ -2,11 +2,10 @@
 #include <iostream>
 
 #include "RGBFigure.h"
-#include "../IGraphicPrimitive.h"
 
 namespace GraphicEditor
 {
-	class TriangleRGB : RGBFigure, public IGraphicPrimitive
+	class TriangleRGB : public RGBFigure
 	{
 	public:
 		TriangleRGB(color_type col) : RGBFigure(col) {}
@@ -16,7 +15,7 @@ namespace GraphicEditor
 		}
 	};
 
-	class CircleRGB : RGBFigure, public IGraphicPrimitive
+	class CircleRGB : public RGBFigure
 	{
 	public:
 		CircleRGB(color_type col) : RGBFigure(col) {}
@@ -25,7 +24,7 @@ namespace GraphicEditor
 			std::cout << "I am RGB circle, my color is " << std::hex << GetColor() << '\n';
 		}
 	};
-	class SquareRGB : RGBFigure, public IGraphicPrimitive
+	class SquareRGB : public RGBFigure
 	{
 	public:
 		SquareRGB(color_type col) : RGBFigure(col) {}
@@ -35,7 +34,7 @@ namespace GraphicEditor
 		}
 	};
 
-	class HexagonRGB : RGBFigure, public IGraphicPrimitive
+	class HexagonRGB : public RGBFigure
 	{
 	public:
 		HexagonRGB(color_type col) : RGBFigure(col) {}
