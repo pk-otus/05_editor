@@ -9,12 +9,17 @@ namespace GraphicEditor
 	public:
 		DatabaseDocumentEditor(const std::string& url, uint32_t p) : 
 			database_connect_url(url),
-			database_connect_port(p) {}
+			database_connect_port(p)
+		{
+			std::cout	<< "Found database connection " 
+						<< database_connect_url << ':' 
+						<< std::to_string(database_connect_port);
+		}
 
 		void CreateNewDocument(const std::string& file_name) override
 		{
 			EstablishConnection();
-			std::cout << "\nCreating " << file_name;
+			std::cout << "\nCreating remote " << file_name;
 			CloseConnection();
 		}
 		void ImportFromFile(const std::string& file_name) override

@@ -9,7 +9,7 @@ find_package(GTest REQUIRED)
 
 file(GLOB GRAPHEDITOR_TEST *.cpp)
 
-add_executable(grapheditor_test_google ${GRAPHEDITOR_TEST})
+add_executable(grapheditor_test_google ${GRAPHEDITOR_TEST} ../src/ConcreteFigures.cpp)
 
 set_target_properties(grapheditor_test_google PROPERTIES
 INCLUDE_DIRECTORIES ${GTEST_INCLUDE_DIRS}

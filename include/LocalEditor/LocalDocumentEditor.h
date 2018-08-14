@@ -7,7 +7,10 @@ namespace GraphicEditor
 	class LocalFileDocumentEditor : public IDocumentEditor
 	{
 	public:
-		LocalFileDocumentEditor(const std::string& workdir) : working_directory(workdir) {}
+		LocalFileDocumentEditor(const std::string& workdir) : working_directory(workdir)
+		{
+			std::cout << "Found working directory " << working_directory;
+		}
 
 		void CreateNewDocument(const std::string& file_name) override
 		{

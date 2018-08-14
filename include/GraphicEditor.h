@@ -78,7 +78,7 @@ namespace GraphicEditor
 	{
 	public:
 		static std::unique_ptr<ICoreEditor> 
-						CreateEditor(DocumentEditors cfg_editor, PrimitiveCreators cfg_creator);
+			CreateEditor(DocumentEditors cfg_editor, PrimitiveCreators cfg_creator);
 
 		virtual ~ICoreEditor() = default;
 		virtual IDocumentEditor*			FileMenu() const = 0;
