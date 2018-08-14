@@ -1,5 +1,4 @@
-#include "../include/EditorCore.h"
-#include "../include/IGraphicPrimitive.h"
+#include "../include/GraphicEditor.h"
 
 int main(int, char *[])
 {
@@ -16,26 +15,32 @@ int main(int, char *[])
 #endif
 
 	{
-		EditorCore editor(editor_type, creator_type);
+		auto editor = ICoreEditor::CreateEditor(editor_type, creator_type);
 
-		editor.FileMenu()->CreateNewDocument("test.bmp");
+		editor->FileMenu()->CreateNewDocument("test.bmp");
 
-		editor.EditMenu()->TrySetBrushColor(COLOR_RED);
-		auto triangle1 = editor.EditMenu()->CreateHexagon();
+		editor->EditMenu()->TrySetBrushColor(COLOR_RED);
+		auto figure1 = editor->EditMenu()->CreatePrimitive(EnumFigure::Hexagon);
 
-		editor.EditMenu()->TrySetBrushColor(COLOR_WHITE); 
-		auto circle1 = editor.EditMenu()->CreateSquare();
+		editor->EditMenu()->TrySetBrushColor(COLOR_WHITE);
+		auto figure2 = editor->EditMenu()->CreatePrimitive(EnumFigure::Circle);
 
-		triangle1->Draw();
-		editor.EditMenu()->TrySetBrushColor(COLOR_BLACK);
-		editor.EditMenu()->ChangeFillColor(triangle1);
-		triangle1->Draw();
-		circle1->Draw();
+		figure1->Draw();
+		editor->EditMenu()->TrySetBrushColor(COLOR_BLACK);
+		editor->EditMenu()->ChangeFillColor(figure1);
 
-		editor.EditMenu()->DeletePrimitive(triangle1);
-		editor.EditMenu()->DeletePrimitive(circle1);
+		figure1->Draw();
+		figure2->Draw();
 
-		editor.FileMenu()->ExportToFile("exported_test.bmp");
+		editor->EditMenu()->TransformCirclesToSquares();
+
+		figure1->Draw();
+		figure2->Draw();
+
+		editor->EditMenu()->DeletePrimitive(figure1);
+		editor->EditMenu()->DeletePrimitive(figure2);
+
+		editor->FileMenu()->ExportToFile("exported_test.bmp");
 	}
 
 	return 0;

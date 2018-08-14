@@ -1,35 +1,14 @@
 #pragma  once
-#include "../IGraphicPrimitiveCreator.h"
-#include "ConcreteFiguresBW.h"
 #include <cassert>
+
+#include "../BasicPrimitiveCreator.h"
+#include "BlackAndWhiteFigure.h"
 
 namespace GraphicEditor
 {
-	class BlackWhiteGraphicPrimitiveCreator : public IGraphicPrimitiveCreator
+	class BlackWhiteGraphicPrimitiveCreator : public BasicPrimitiveCreator<BlackAndWhiteFigure>
 	{
 	public:
-		IGraphicPrimitive* CreateTriangle() const override
-		{
-			return new TriangleBW(isBlackBrhush);
-		}
-		IGraphicPrimitive* CreateCircle() const override
-		{
-			return new CircleBW(isBlackBrhush);
-		}
-		IGraphicPrimitive* CreateSquare() const override
-		{
-			return new SquareBW(isBlackBrhush);
-		}
-		IGraphicPrimitive* CreateHexagon() const override
-		{
-			return new HexagonBW(isBlackBrhush);
-		}
-
-		void DeletePrimitive(const IGraphicPrimitive* p) const override
-		{
-			delete p;
-		}
-
 		bool TrySetBrushColor(color_type col) override
 		{
 			switch (col)
@@ -45,7 +24,7 @@ namespace GraphicEditor
 			}
 			return true; //changed
 		}
-		void ChangeFillColor(IGraphicPrimitive* p) const override
+		void ChangeFillColor(IGraphicPrimitive* p) override
 		{
 			auto bw = dynamic_cast<BlackAndWhiteFigure*>(p);
 			assert(bw);
@@ -55,7 +34,13 @@ namespace GraphicEditor
 			else
 				bw->SetWhite();			
 		}
+
 	private:
+		BlackAndWhiteFigure* CreateNewFigure(EnumFigure figure_type) const override
+		{
+			return new BlackAndWhiteFigure(figure_type, isBlackBrhush);
+		}
+
 		bool isBlackBrhush = true;
 	};
 }

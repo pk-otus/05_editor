@@ -1,28 +1,15 @@
 #pragma once
-#include "IDocumentEditor.h"
-#include "IGraphicPrimitiveCreator.h"
+#include "GraphicEditor.h"
 
 namespace GraphicEditor
 {	
-	enum class PrimitiveCreators
-	{
-		UseBlackWhitePrimitiveCreator,
-		UseRGBPrimitiveCreator
-	};
-
-	enum class DocumentEditors
-	{
-		UseLocalFileDocumentEditor,
-		UseDatabaseDocumentEditor
-	};
-
-	class EditorCore
+	class EditorCore : public ICoreEditor
 	{
 	public:
 		EditorCore(DocumentEditors cfg_editor, PrimitiveCreators cfg_creator);
 
-		IDocumentEditor*			FileMenu() const { return doc_editor; }
-		IGraphicPrimitiveCreator*	EditMenu() const { return primitive_creator; }
+		IDocumentEditor*			FileMenu() const override { return doc_editor; }
+		IGraphicPrimitiveCreator*	EditMenu() const override { return primitive_creator; }
 
 
 	private:

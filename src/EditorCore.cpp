@@ -1,7 +1,6 @@
-#include "../include/EditorCore.h"
-
 #include <stdexcept>
 
+#include "../include/EditorCore.h"
 #include "../include/BW/BlackWhitePrimitiveCreator.h"
 #include "../include/RGB/RGBPrimitiveCreator.h"
 #include "../include/LocalEditor/LocalDocumentEditor.h"
@@ -42,4 +41,10 @@ EditorCore::EditorCore(DocumentEditors cfg_editor, PrimitiveCreators cfg_creator
 	doc_editor(InitializeDocumentEditor(cfg_editor)),
 	primitive_creator(InitializeFigureCreator(cfg_creator))
 {
+}
+
+std::unique_ptr<ICoreEditor> ICoreEditor::CreateEditor(	DocumentEditors cfg_editor, 
+										PrimitiveCreators cfg_creator)
+{
+	return std::unique_ptr<ICoreEditor>(new EditorCore(cfg_editor, cfg_creator));
 }

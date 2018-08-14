@@ -1,47 +1,34 @@
 #pragma once
-#include "../IGraphicPrimitiveCreator.h"
-#include "ConcreteFiguresRGB.h"
+#include <cassert>
+
+#include "../BasicPrimitiveCreator.h"
+#include "RGBFigure.h"
 
 namespace GraphicEditor
 {
-	class RGBGraphicPrimitiveCreator : public IGraphicPrimitiveCreator
+	class RGBGraphicPrimitiveCreator : public BasicPrimitiveCreator<RGBFigure>
 	{
 	public:
-		IGraphicPrimitive * CreateTriangle() const override
-		{
-			return new TriangleRGB(brush_color);
-		}
-		IGraphicPrimitive* CreateCircle() const override
-		{
-			return new CircleRGB(brush_color);
-		}
-		IGraphicPrimitive* CreateSquare() const override
-		{
-			return new SquareRGB(brush_color);
-		}
-		IGraphicPrimitive* CreateHexagon() const override
-		{
-			return new HexagonRGB(brush_color);
-		}
-		void DeletePrimitive(const IGraphicPrimitive* p) const override
-		{
-			delete p;
-		}
-
 		bool TrySetBrushColor(color_type col) override
 		{
 			brush_color = col;
 			return true; //changed
 		}
 
-		void ChangeFillColor(IGraphicPrimitive* p) const override
+		void ChangeFillColor(IGraphicPrimitive* p) override
 		{
 			auto rgb = dynamic_cast<RGBFigure*>(p);
 			assert(rgb);
 
 			rgb->SetColor(brush_color);
 		}
+
 	private:
+		RGBFigure* CreateNewFigure(EnumFigure figure_type) const override
+		{
+			return new RGBFigure(figure_type, brush_color);
+		}
+
 		color_type brush_color = COLOR_BLACK;
 	};
 }

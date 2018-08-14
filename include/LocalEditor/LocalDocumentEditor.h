@@ -1,6 +1,6 @@
 #pragma once
 #include <iostream>
-#include "../IDocumentEditor.h"
+#include "../GraphicEditor.h"
 
 namespace GraphicEditor
 {

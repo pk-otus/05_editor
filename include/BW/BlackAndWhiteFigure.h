@@ -1,18 +1,29 @@
 #pragma once
-#include "../IGraphicPrimitive.h"
+#include <iostream>
+
+#include "../FigureContainer.h"
 
 namespace GraphicEditor
 {
-	class BlackAndWhiteFigure : public IGraphicPrimitive
+	inline std::string BWColorName(bool black) { return black ? "black" : "white"; }
+
+	class BlackAndWhiteFigure : public FigureContainer, public IGraphicPrimitive
 	{
 	public:
-		BlackAndWhiteFigure(bool black) : isBlack(black) {}
+		BlackAndWhiteFigure(EnumFigure f, bool black) : 
+			FigureContainer(f),
+			isBlack(black) {}
 
 		bool IsBlack() const { return isBlack; }
 
 		void SetWhite() { isBlack = false; }
 		void SetBlack() { isBlack = true; }
 
+		void Draw() const override
+		{
+			std::cout	<< "\nMy coordinates: [" << GetFigure()->GetCoordinates() 
+						<< "], my color is " << BWColorName(IsBlack());
+		}
 	private:
 		bool isBlack;
 	};
