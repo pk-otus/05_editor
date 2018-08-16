@@ -1,0 +1,11 @@
+<map id="include/ConcreteFigures.h" name="include/ConcreteFigures.h">
+<area shape="rect" id="node2" href="$BasicPrimitiveCreator_8h.html" title="include/BasicPrimitiveCreator.h" alt="" coords="7,163,212,189"/>
+<area shape="rect" id="node6" href="$FigureContainer_8h.html" title="include/FigureContainer.h" alt="" coords="243,80,413,107"/>
+<area shape="rect" id="node10" href="$ConcreteFigures_8cpp.html" title="src/ConcreteFigures.cpp" alt="" coords="437,80,601,107"/>
+<area shape="rect" id="node3" href="$BlackWhitePrimitiveCreator_8h.html" title="include/BW/BlackWhitePrimitive\lCreator.h" alt="" coords="5,246,215,287"/>
+<area shape="rect" id="node5" href="$RGBPrimitiveCreator_8h.html" title="include/RGB/RGBPrimitive\lCreator.h" alt="" coords="241,246,420,287"/>
+<area shape="rect" id="node4" href="$EditorCore_8cpp.html" title="src/EditorCore.cpp" alt="" coords="155,336,284,363"/>
+<area shape="rect" id="node7" href="$BlackAndWhiteFigure_8h.html" title="include/BW/BlackAndWhite\lFigure.h" alt="" coords="237,155,419,197"/>
+<area shape="rect" id="node9" href="$RGBFigure_8h.html" title="include/RGB/RGBFigure.h" alt="" coords="444,163,620,189"/>
+<area shape="rect" id="node8" href="$DisplayPrimitive_8cpp.html" title="test/DisplayPrimitive.cpp" alt="" coords="447,253,615,280"/>
+</map>

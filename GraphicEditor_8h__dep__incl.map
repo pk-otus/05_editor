@@ -1,0 +1,19 @@
+<map id="include/GraphicEditor.h" name="include/GraphicEditor.h">
+<area shape="rect" id="node2" href="$BasicPrimitiveCreator_8h.html" title="include/BasicPrimitiveCreator.h" alt="" coords="5,253,211,280"/>
+<area shape="rect" id="node6" href="$ConcreteFigures_8h.html" title="include/ConcreteFigures.h" alt="" coords="273,88,447,115"/>
+<area shape="rect" id="node7" href="$FigureContainer_8h.html" title="include/FigureContainer.h" alt="" coords="433,171,604,197"/>
+<area shape="rect" id="node12" href="$DataBaseEditor_8h.html" title="include/DataBaseEditor\l/DataBaseEditor.h" alt="" coords="679,81,837,122"/>
+<area shape="rect" id="node16" href="$EditorCore_8h.html" title="include/EditorCore.h" alt="" coords="1314,253,1453,280"/>
+<area shape="rect" id="node17" href="$LocalDocumentEditor_8h.html" title="include/LocalEditor\l/LocalDocumentEditor.h" alt="" coords="863,81,1025,122"/>
+<area shape="rect" id="node18" href="$main_8cpp.html" title="src/main.cpp" alt="" coords="1365,88,1461,115"/>
+<area shape="rect" id="node3" href="$BlackWhitePrimitiveCreator_8h.html" title="include/BW/BlackWhitePrimitive\lCreator.h" alt="" coords="216,337,425,378"/>
+<area shape="rect" id="node5" href="$RGBPrimitiveCreator_8h.html" title="include/RGB/RGBPrimitive\lCreator.h" alt="" coords="11,337,191,378"/>
+<area shape="rect" id="node4" href="$EditorCore_8cpp.html" title="src/EditorCore.cpp" alt="" coords="591,427,720,453"/>
+<area shape="rect" id="node11" href="$ConcreteFigures_8cpp.html" title="src/ConcreteFigures.cpp" alt="" coords="244,171,408,197"/>
+<area shape="rect" id="node8" href="$BlackAndWhiteFigure_8h.html" title="include/BW/BlackAndWhite\lFigure.h" alt="" coords="435,246,617,287"/>
+<area shape="rect" id="node10" href="$RGBFigure_8h.html" title="include/RGB/RGBFigure.h" alt="" coords="235,253,411,280"/>
+<area shape="rect" id="node9" href="$DisplayPrimitive_8cpp.html" title="test/DisplayPrimitive.cpp" alt="" coords="451,344,619,371"/>
+<area shape="rect" id="node13" href="$DocumentImportExport_8cpp.html" title="test/DocumentImportExport.cpp" alt="" coords="1031,171,1239,197"/>
+<area shape="rect" id="node14" href="$NewDocument_8cpp.html" title="test/NewDocument.cpp" alt="" coords="679,171,837,197"/>
+<area shape="rect" id="node15" href="$StorageTest_8cpp.html" title="test/StorageTest.cpp" alt="" coords="863,171,1007,197"/>
+</map>

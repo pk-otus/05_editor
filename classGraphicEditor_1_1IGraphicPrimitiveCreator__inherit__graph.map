@@ -1,0 +1,7 @@
+<map id="GraphicEditor::IGraphicPrimitiveCreator" name="GraphicEditor::IGraphicPrimitiveCreator">
+<area shape="rect" id="node2" href="$classGraphicEditor_1_1BasicPrimitiveCreator.html" title="GraphicEditor::BasicPrimitive\lCreator\&lt; BlackAndWhiteFigure \&gt;" alt="" coords="265,5,479,46"/>
+<area shape="rect" id="node4" href="$classGraphicEditor_1_1BasicPrimitiveCreator.html" title="GraphicEditor::BasicPrimitive\lCreator\&lt; RGBFigure \&gt;" alt="" coords="275,70,469,111"/>
+<area shape="rect" id="node6" href="$classGraphicEditor_1_1BasicPrimitiveCreator.html" title="GraphicEditor::BasicPrimitive\lCreator\&lt; FIGURE \&gt;" alt="" coords="275,135,469,177"/>
+<area shape="rect" id="node3" href="$classGraphicEditor_1_1BlackWhiteGraphicPrimitiveCreator.html" title="GraphicEditor::BlackWhite\lGraphicPrimitiveCreator" alt="" coords="532,5,708,46"/>
+<area shape="rect" id="node5" href="$classGraphicEditor_1_1RGBGraphicPrimitiveCreator.html" title="GraphicEditor::RGBGraphic\lPrimitiveCreator" alt="" coords="529,70,711,111"/>
+</map>

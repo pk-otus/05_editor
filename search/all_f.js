@@ -1,0 +1,9 @@
+var searchData=
+[
+  ['test',['TEST',['../DisplayPrimitive_8cpp.html#ab606f985f8753138834b2c1057d61584',1,'TEST(GraphEditorTest, DisplayGraphicPrimitiveTest):&#160;DisplayPrimitive.cpp'],['../DocumentImportExport_8cpp.html#a8ed394e3dc8b8bcce2728af5c45722c7',1,'TEST(GraphEditorTest, DocumentImportExport):&#160;DocumentImportExport.cpp'],['../NewDocument_8cpp.html#a02915da76a7b325eef8230aab5e4a44d',1,'TEST(GraphEditorTest, NewDocument):&#160;NewDocument.cpp'],['../StorageTest_8cpp.html#a5faa4ac313dae94dd98da2d41e752098',1,'TEST(GraphEditorTest, StorageTest):&#160;StorageTest.cpp']]],
+  ['test_5fmain_2ecpp',['test_main.cpp',['../test__main_8cpp.html',1,'']]],
+  ['transformcirclestosquares',['TransformCirclesToSquares',['../classGraphicEditor_1_1BasicPrimitiveCreator.html#a547ec335316bd967ee0b08e0fc9006de',1,'GraphicEditor::BasicPrimitiveCreator::TransformCirclesToSquares()'],['../classGraphicEditor_1_1IGraphicPrimitiveCreator.html#a6d52b5b85a4c96eb8acc430893bf1c55',1,'GraphicEditor::IGraphicPrimitiveCreator::TransformCirclesToSquares()']]],
+  ['triangle',['Triangle',['../namespaceGraphicEditor.html#a40ad0eae19fb3aca38bb63919ec65924a5e5500cb2b82eb72d550de644bd1b64b',1,'GraphicEditor']]],
+  ['triangle',['Triangle',['../classGraphicEditor_1_1Triangle.html',1,'GraphicEditor']]],
+  ['trysetbrushcolor',['TrySetBrushColor',['../classGraphicEditor_1_1BlackWhiteGraphicPrimitiveCreator.html#a5fe09346b860cef751f4d28fc5f36581',1,'GraphicEditor::BlackWhiteGraphicPrimitiveCreator::TrySetBrushColor()'],['../classGraphicEditor_1_1IGraphicPrimitiveCreator.html#a68cd646253df355e94154a7bf076531d',1,'GraphicEditor::IGraphicPrimitiveCreator::TrySetBrushColor()'],['../classGraphicEditor_1_1RGBGraphicPrimitiveCreator.html#a7eefb309794c0697f2c1197ba3476b1d',1,'GraphicEditor::RGBGraphicPrimitiveCreator::TrySetBrushColor()']]]
+];

@@ -1,0 +1,8 @@
+var searchData=
+[
+  ['changefigure',['ChangeFigure',['../classGraphicEditor_1_1FigureContainer.html#a2301b6c00ee3e5218dbb35b28441f924',1,'GraphicEditor::FigureContainer']]],
+  ['changefillcolor',['ChangeFillColor',['../classGraphicEditor_1_1BlackWhiteGraphicPrimitiveCreator.html#ae5390caa5c5dde07cb0e135cfe686754',1,'GraphicEditor::BlackWhiteGraphicPrimitiveCreator::ChangeFillColor()'],['../classGraphicEditor_1_1IGraphicPrimitiveCreator.html#a68714dc2dcb94b4cebd9b73820c72039',1,'GraphicEditor::IGraphicPrimitiveCreator::ChangeFillColor()'],['../classGraphicEditor_1_1RGBGraphicPrimitiveCreator.html#a484c095cdade0b96fc843b50b99895e6',1,'GraphicEditor::RGBGraphicPrimitiveCreator::ChangeFillColor()']]],
+  ['createeditor',['CreateEditor',['../classGraphicEditor_1_1ICoreEditor.html#a1edb9d33b114fdb3c5105e28407b92c2',1,'GraphicEditor::ICoreEditor']]],
+  ['createnewdocument',['CreateNewDocument',['../classGraphicEditor_1_1DatabaseDocumentEditor.html#a07782b0efcd06634714507e8b2c2541f',1,'GraphicEditor::DatabaseDocumentEditor::CreateNewDocument()'],['../classGraphicEditor_1_1IDocumentEditor.html#aa8c496662c5c94f43292e79f84e45247',1,'GraphicEditor::IDocumentEditor::CreateNewDocument()'],['../classGraphicEditor_1_1LocalFileDocumentEditor.html#a48676404498c1ed5406f6c39e9a34d1d',1,'GraphicEditor::LocalFileDocumentEditor::CreateNewDocument()']]],
+  ['createprimitive',['CreatePrimitive',['../classGraphicEditor_1_1BasicPrimitiveCreator.html#af0d291d8872cab6ea35c6b13f280c9ca',1,'GraphicEditor::BasicPrimitiveCreator::CreatePrimitive()'],['../classGraphicEditor_1_1IGraphicPrimitiveCreator.html#ac5315c0fd396fe50dd2bd0fa0e352d05',1,'GraphicEditor::IGraphicPrimitiveCreator::CreatePrimitive()']]]
+];

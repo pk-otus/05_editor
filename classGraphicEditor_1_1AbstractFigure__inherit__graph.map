@@ -1,0 +1,6 @@
+<map id="GraphicEditor::AbstractFigure" name="GraphicEditor::AbstractFigure">
+<area shape="rect" id="node2" href="$classGraphicEditor_1_1Circle.html" title="GraphicEditor::Circle" alt="" coords="258,5,401,32"/>
+<area shape="rect" id="node3" href="$classGraphicEditor_1_1Hexagon.html" title="GraphicEditor::Hexagon" alt="" coords="249,56,410,83"/>
+<area shape="rect" id="node4" href="$classGraphicEditor_1_1Square.html" title="GraphicEditor::Square" alt="" coords="254,107,405,133"/>
+<area shape="rect" id="node5" href="$classGraphicEditor_1_1Triangle.html" title="GraphicEditor::Triangle" alt="" coords="252,157,407,184"/>
+</map>

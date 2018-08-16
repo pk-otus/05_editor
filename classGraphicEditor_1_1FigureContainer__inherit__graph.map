@@ -1,0 +1,4 @@
+<map id="GraphicEditor::FigureContainer" name="GraphicEditor::FigureContainer">
+<area shape="rect" id="node2" href="$classGraphicEditor_1_1BlackAndWhiteFigure.html" title="GraphicEditor::BlackAndWhite\lFigure" alt="" coords="5,81,203,122"/>
+<area shape="rect" id="node3" href="$classGraphicEditor_1_1RGBFigure.html" title="GraphicEditor::RGBFigure" alt="" coords="227,88,401,115"/>
+</map>

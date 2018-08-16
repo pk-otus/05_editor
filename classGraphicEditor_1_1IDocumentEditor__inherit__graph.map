@@ -1,0 +1,4 @@
+<map id="GraphicEditor::IDocumentEditor" name="GraphicEditor::IDocumentEditor">
+<area shape="rect" id="node2" href="$classGraphicEditor_1_1DatabaseDocumentEditor.html" title="GraphicEditor::DatabaseDocument\lEditor" alt="" coords="5,97,229,138"/>
+<area shape="rect" id="node3" href="$classGraphicEditor_1_1LocalFileDocumentEditor.html" title="GraphicEditor::LocalFile\lDocumentEditor" alt="" coords="254,97,415,138"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classGraphicEditor_1_1FigureContainer.html" title="GraphicEditor::FigureContainer" alt="" coords="10,15,211,41"/>
+<area shape="rect" id="node2" href="$classGraphicEditor_1_1BlackAndWhiteFigure.html" title="GraphicEditor::BlackAndWhite\lFigure" alt="" coords="265,5,463,46"/>
+<area shape="rect" id="node3" href="$classGraphicEditor_1_1RGBFigure.html" title="GraphicEditor::RGBFigure" alt="" coords="277,71,451,97"/>
+<area shape="rect" id="node4" href="$classGraphicEditor_1_1IGraphicPrimitive.html" title="GraphicEditor::IGraphicPrimitive" alt="" coords="6,67,215,93"/>
+</map>
