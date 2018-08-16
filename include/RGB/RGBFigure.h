@@ -1,5 +1,6 @@
 #pragma once
 #include <iostream>
+#include <iomanip>
 
 #include "../FigureContainer.h"
 
@@ -19,7 +20,8 @@ namespace GraphicEditor
 		void Draw() const override
 		{
 			std::cout	<< "\nMy coordinates: [" << GetFigure()->GetCoordinates() 
-						<< "], my color is " << std::hex << color;
+						<< "], my color is " << std::uppercase << std::hex 
+						<< std::setfill('0') << std::setw(6) << color;
 		}
 	private:
 		

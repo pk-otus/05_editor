@@ -12,7 +12,7 @@ TEST(GraphEditorTest, DisplayGraphicPrimitiveTest)
 	circle_rgb->Draw();
 	std::string output = testing::internal::GetCapturedStdout();
 
-	ASSERT_NE(std::string::npos, output.find("ff0000"));
+	ASSERT_NE(std::string::npos, output.find("FF0000"));
 	ASSERT_NE(std::string::npos, output.find("[PointCenter, Radius]"));
 
 	auto square_bw = new BlackAndWhiteFigure(EnumFigure::Square, true);
