@@ -6,8 +6,6 @@ else()
    project(editor VERSION 0.0.1)
 endif()
 
-configure_file(version.h.in ${PROJECT_SOURCE_DIR}/version.h)
-
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
